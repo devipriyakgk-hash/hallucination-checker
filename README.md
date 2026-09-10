@@ -19,7 +19,7 @@ No training required — this is a genuinely pretrained model doing real semanti
 **Fallback method — TF-IDF cosine similarity:**
 If there's no internet connection to download the transformer weights (or `transformers` isn't installed), the tool automatically falls back to a simple TF-IDF + cosine-similarity heuristic so it still runs. **This fallback is intentionally crude** — it can be fooled by shared keywords even when the actual claim is false (see the honest limitation below). It exists purely so the tool is runnable in constrained environments, not as a real alternative to the NLI model.
 
-## Honest limitation (worth mentioning in any writeup / demo)
+## Honest limitation 
 
 Tested with:
 - Source: *"The Eiffel Tower was completed in 1889 and is located in Paris, France."*
